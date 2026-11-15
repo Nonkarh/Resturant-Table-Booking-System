@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableEase | Restaurant Booking</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">TableEase</h2>
+
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}" class="login-btn">Create Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Good Food. Great Moments.</h1>
+
+            <p>
+                Enjoy unforgettable dining experiences.
+                Reserve your table with us today.
+            </p>
+
+            <a href="{{ url_for('booking') }}" class="book-btn">
+                Book a Table
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TableEase. All rights reserved. &nbsp; <a href="{{ url_for('admin_login') }}" class="footer-admin">Administrator</a></p>
+    </footer>
+
+</body>
+</html>
